@@ -6,7 +6,7 @@
 
 ## 依赖安装
 
-- 必须安装的依赖：[`fish`](https://github.com/fish-shell/fish-shell)、[`curl`](https://github.com/curl/curl)、[`jq`](https://github.com/stedolan/jq)、[`pup`](https://github.com/ericchiang/pup)、[`img2pdf`](https://github.com/josch/img2pdf)。
+- 必须安装的依赖：[`fish`](https://github.com/fish-shell/fish-shell) (version >= `3.0.0`)、[`curl`](https://github.com/curl/curl)、[`jq`](https://github.com/stedolan/jq)、[`pup`](https://github.com/ericchiang/pup)、[`img2pdf`](https://github.com/josch/img2pdf)。
 - 可选依赖：[`parallel`](https://www.gnu.org/software/parallel/)（用于提升下载速度）、[`ocrmypdf`](https://github.com/ocrmypdf/OCRmyPDF)（用于对下载的PDF文档进行图片文字识别；对中文支持较差）。
 
 ### Arch Linux
@@ -20,6 +20,7 @@ sudo pacman --sync --refresh --sysupgrade && sudo pacman --sync fish curl jq img
 ### Ubuntu
 
 ```shell
+sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update && sudo apt install fish curl jq img2pdf parallel ocrmypdf
 ```
 
