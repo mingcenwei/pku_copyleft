@@ -50,7 +50,7 @@ brew install fish curl jq pup parallel ocrmypdf
 3. 点击搜索出来的学位论文题名，进入“查看论文信息”页面，点击右上角的“查看全文”。
 4. 将会弹出网址形如 "http://162.105.134.201/pdfindex.jsp?fid=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 的页面，在该页面可以查看论文。记录下此页面网址中 `fid=` 后面的 `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`。
 5. 在浏览器中按 `F12` 打开开发者工具，选择 _Storage_ 标签页，选择 _Cookies_，然后找到 _Name_ 列为 `JSESSIONID` 的一行，记录下该行的 _Value_ 列的值 `YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY`。
-6. 打开命令行工具，进入 `pku_copyleft.fish` 所在文件夹，如后输入以下命令即可将论文的 PDF 下载到该文件夹。
+6. 打开命令行工具，进入 `pku_copyleft.fish` 所在文件夹，然后输入以下命令即可将论文的 PDF 下载到该文件夹。
 
 ```shell
 ./pku_copyleft.fish --cookie 'YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY' --fid 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
