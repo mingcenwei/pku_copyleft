@@ -68,7 +68,7 @@ end
 begin
 	set --local optionSpecs \
 		--name 'pku_copyleft' \
-		(printf -- '--exclusive\nh,%s\n' c f o l) \
+		(printf '--exclusive\nh,%s\n' c f o l) \
 		(fish_opt --short 'c' --long 'cookie' --required-val) \
 		(fish_opt --short 'f' --long 'fid' --required-val) \
 		(fish_opt --short 'o' --long 'output-dir' --required-val) \
